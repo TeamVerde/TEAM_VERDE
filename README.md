@@ -1,2 +1,2 @@
-# TEAM_VERDE
-Everything related to Team Verde on the web
+# Green Variable
+Code repo for the website of Green Variable, LLC of Charlotte, NC.
