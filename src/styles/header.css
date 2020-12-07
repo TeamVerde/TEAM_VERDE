@@ -1,0 +1,32 @@
+header {
+    padding: .5rem;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #111;
+}
+
+header div img {
+    width: 100%;
+    max-width: 300px;
+}
+
+header div {
+    padding: .5rem;
+    max-width: 300px;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eee;
+}

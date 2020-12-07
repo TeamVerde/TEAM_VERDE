@@ -1,0 +1,39 @@
+.bg-svg {
+  margin-left: -10%;
+  width: 120vw;
+  height: 120vw;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;  
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-svg {
+    top: 100px;
+    width: 700px;
+    height: 700px;
+  }
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  color: #eee;
+  overflow: hidden;
+}
+
+.bg-svg > path {
+  fill: none;
+  stroke-width: 2;
+  stroke: url(#gradientFixed);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .bg-svg > path {
+    stroke: url(#gradientAni)
+  }
+}
