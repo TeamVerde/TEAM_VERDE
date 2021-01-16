@@ -1,5 +1,5 @@
 header {
-    padding: .5rem;
+    padding: 1.5rem;
     z-index: 3;
     position: sticky;
     top: 0;
@@ -8,7 +8,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #111;
+    background-color: var(--bg-dark);
 }
 
 header div img {
@@ -24,9 +24,9 @@ header div {
     justify-content: space-between;
 }
 
-header div a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #eee;
-}
+@media only screen and (min-width: 1200px) {
+    header {
+      margin-left: calc(50vw - 500px);
+      margin-right: calc(50vw - 500px);
+    }
+  }

@@ -28,12 +28,40 @@
        url('../fonts/source-sans-pro-v14-latin-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
 }
 
+:root {
+  --light: #efefef;
+  --dark: #081414;
+  --text-light:#eee;
+  --primary: #59AA5C;
+  --secondary: #7D227E;
+}
+
+html { font-size: 62.5%; } 
+body { font-size: 1.4rem; } 
+h1  { 
+  font-size: 6rem; 
+  line-height: 1;
+} 
+h2  { font-size: 5rem; } 
+h3  { font-size: 4rem; }
+h4  { font-size: 3rem; }
+h5 { font-size: 2.4rem; } 
+h6 { font-size: 1.8rem; } 
+
 body {
-  background-color: #111;
+  background-color: var(--light);
+  color: var(--text-light);
   margin: 0;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }

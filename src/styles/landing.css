@@ -1,37 +1,74 @@
 .landing {
-    max-width: 800px;
-    width: 100%;
-    min-height: 70vh;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1;
+    position: relative;
+    background-color: var(--dark);
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 }
 
-.landing h1, .landing p {
-    width: 100%;
+.landing > div {
+    z-index: 1;
 }
 
 .landing h1 {
-    font-size: 50px;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .landing p {
     font-weight: 700;
-    margin: 10px 0;
+    line-height: 1;
+    margin: .5rem 0;
 }
 
 .landing button {
-    padding: 1rem;
-    border-radius: 36px;
-    border-style: none;
-    background: linear-gradient(45deg, #59AA5C, #7D227E);
-    color: #eee;
-    text-transform: uppercase;
-    font-weight: 700;
+    margin-top: 3rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+    color: var(--light);
 }
+
+.bg-svg {
+    width: 110vw;
+    height: 110vw;
+    position: absolute;
+    z-index: 0;
+    top: -70px;
+    left: -30px;  
+  }
+
+  .bg-svg > path {
+    fill: none;
+    stroke-width: 1.5;
+    max-height: 600px;
+    stroke: url(#gradientFixed);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .bg-svg > path {
+      stroke: url(#gradientAni);
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+      .hero-text {
+          margin-left: 100px;
+          margin-right: 100px;
+      }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .bg-svg {
+      width: 1000px;
+      height: 1000px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .bg-svg > path {
+        stroke-width: 1;
+    }
+  }
