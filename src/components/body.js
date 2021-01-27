@@ -7,7 +7,6 @@ function body() {
     return (
         <div className='content'>
         <Landing/>
-        <Services/>
         </div>
     )
 }
