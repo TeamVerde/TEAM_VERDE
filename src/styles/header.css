@@ -1,14 +1,10 @@
 header {
-    padding: 1.5rem;
-    z-index: 3;
-    position: sticky;
     top: 0;
     left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: var(--bg-dark);
 }
 
 header div img {
@@ -17,16 +13,8 @@ header div img {
 }
 
 header div {
-    padding: .5rem;
     max-width: 300px;
     flex: 1 1 auto;
     display: flex;
     justify-content: space-between;
 }
-
-@media only screen and (min-width: 1200px) {
-    header {
-      margin-left: calc(50vw - 500px);
-      margin-right: calc(50vw - 500px);
-    }
-  }

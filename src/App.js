@@ -1,14 +1,14 @@
 import './styles/App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/header'
-import Body from './components/body'
+import Landing from './components/landing'
 
 function App() {
   return (
     <Router>
     <div className="App">
       <Header/>
-      <Body/>
+      <Landing/>
     </div>
     </Router>
   );
