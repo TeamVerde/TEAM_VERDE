@@ -14,17 +14,21 @@
 }
 
 button {
-  padding: 1rem;
-  border-radius: 36px;
-  border-style: none;
-  color: var(--dark);
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:var(--dark);
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
 }
 
 button.fill {
-  border-style: none;
+  border-style:solid;
+  color:var(--light);
   background: linear-gradient(45deg, var(--primary),var(--secondary));
 }
 

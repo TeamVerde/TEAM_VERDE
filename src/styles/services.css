@@ -1,7 +1,6 @@
 .services {
     position: relative;
-    background-color: rgb(195, 202, 190);
-    color: var(--dark);
+    color: var(--light);
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
