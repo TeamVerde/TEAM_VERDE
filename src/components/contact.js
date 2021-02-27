@@ -1,11 +1,12 @@
 import React from 'react';
-import '../styles/contact.css';
 
 function Contact(){
 
     function onClick()
     {
-        window.location.href = `mailto:contact@greenvariable.com?subject=IT Consulting Request"`;
+        // Great resource on mailto syntax
+        // https://css-tricks.com/snippets/html/mailto-links/
+        window.location.href = 'mailto:contact@greenvariable.com?subject=IT Consulting Request';
     }
 
     return (
