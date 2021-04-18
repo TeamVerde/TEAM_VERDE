@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import logo from '../assets/GVLogo.svg'
 import '../styles/header.css'
 
@@ -8,11 +7,6 @@ function header() {
         <header>
             <div>
             <img src={logo} alt='Green Variable Logo'/>
-            </div>
-            <div>
-            <Link to="#">Link</Link>
-            <Link to="#">Link</Link>
-            <Link to="#">Link</Link>
             </div>
         </header>
     )
